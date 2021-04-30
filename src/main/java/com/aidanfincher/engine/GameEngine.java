@@ -68,7 +68,15 @@ public class GameEngine implements Runnable {
         while (Timer.getTime() < endTime) {
             try {
                 Thread.sleep(1);
-            } catch(InterruptedException e) {}
+            } catch(InterruptedException e) {
+                e.printStackTrace();
+            } finally {
+                destroy();
+            }
         }
+    }
+
+    protected void destroy() {
+        logic.destroy();
     }
 }

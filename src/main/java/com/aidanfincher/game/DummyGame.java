@@ -24,4 +24,9 @@ public class DummyGame implements IGameLogic {
     public void render(Window window) {
 
     }
+
+    @Override
+    public void destroy() {
+
+    }
 }

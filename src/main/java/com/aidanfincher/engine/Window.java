@@ -30,6 +30,7 @@ public class Window {
 
     public void create() {
         System.out.println("LWJGL Version: " + Version.getVersion());
+        System.out.println("System OS: " + System.getProperty("os.name"));
         GLFWErrorCallback.createPrint(System.err).set();
 
         if (!glfwInit())

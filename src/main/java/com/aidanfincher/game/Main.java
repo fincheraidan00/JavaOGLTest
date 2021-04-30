@@ -2,6 +2,7 @@ package com.aidanfincher.game;
 
 import com.aidanfincher.engine.GameEngine;
 import com.aidanfincher.engine.IGameLogic;
+import com.aidanfincher.engine.gfx.ShaderProgram;
 
 public class Main {
 
